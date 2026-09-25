@@ -1,7 +1,8 @@
-// Scotland's Wild price feed builder, v1.0 (25 Sep 2026)
+// Scotland's Wild price feed builder, v1.1 (25 Sep 2026)
 // Reads every upcoming departure from Checkfront, finds each tour's lowest adult
-// price, and writes docs/prices.json for the website to read.
-// Run by .github/workflows/update-prices.yml. Needs Node 20+ (built-in fetch).
+// price (and lowest youth 12-17 price), and writes docs/prices.json for the website to read.
+// v1.1: adds youthFrom, read from the same Checkfront replies (no extra requests).
+// Run by .github/workflows/update-prices.yml. Needs Node 20 or later (the workflow uses 24) (built-in fetch).
 
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
 
@@ -12,7 +13,8 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
   for (let i = 0; i <= config.horizonDays; i += 1) dates.push(addDays(today, i));
 
   const departures = {};            // id -> { yyyymmdd: adultPrice }
-  Object.keys(config.tours).forEach(id => { departures[id] = {}; });
+  const youth = {};                 // id -> { yyyymmdd: youthPrice }
+  Object.keys(config.tours).forEach(id => { departures[id] = {}; youth[id] = {}; });
 
   const jobs = [];
   config.categories.forEach(cat => dates.forEach(d => jobs.push({ cat, d })));
@@ -34,6 +36,8 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       const adult = Number(rate.sub_total);
       if (!(available > 0) || !(adult > 0)) return;
       departures[id][m[1]] = adult;
+      const y = youthPrice(rate, m[1], adult);
+      if (y > 0) youth[id][m[1]] = y;
     });
   });
 
@@ -45,6 +49,8 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       return;
     }
     const from = Math.min(...list.map(x => x[1]));
+    const ylist = Object.values(youth[id]);
+    const youthFrom = ylist.length ? round2(Math.min(...ylist)) : null;
     const atFrom = list.filter(x => x[1] === from).map(x => x[0]);
     const needed = Math.max(config.selectedDatesMinCount, Math.ceil(config.selectedDatesShare * list.length));
     tours[id] = {
@@ -52,6 +58,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       from: round2(from),
       deposit: round2(from * t.depositPct / 100),
       depositPct: t.depositPct,
+      youthFrom,
       selectedDates: atFrom.length < needed,
       cheapestDates: atFrom.slice(0, 8),
       departuresAtFrom: atFrom.length,
@@ -78,6 +85,17 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
     tours,
     groups
   };
+}
+
+// Youth (12-17) price for one departure, from the same reply as the adult price.
+// Checkfront calls this parameter "children" (labelled "Youth (12-17)"). The per-date price
+// is only used when the reply is for that exact date and its adult price matches, so a
+// departure that Checkfront "snapped" to from a nearby date never gives a wrong youth price.
+function youthPrice(rate, yyyymmdd, adult) {
+  const day = rate.dates && rate.dates[yyyymmdd];
+  if (!day || !day.price || Number(day.price.adults) !== adult) return 0;
+  const v = Number(day.price.children);
+  return v > 0 ? v : 0;
 }
 
 function londonDate(d) {
@@ -143,6 +161,9 @@ async function main() {
     const old = previous && previous.tours && previous.tours[id];
     if (!old || old.from !== t.from || old.selectedDates !== t.selectedDates) {
       changes.push(`- ${t.name} (item ${id}): ${old && old.from != null ? '£' + old.from : 'new'} → ${t.from != null ? '£' + t.from : 'not on sale'}${t.selectedDates ? ' (on selected dates)' : ''}`);
+    }
+    if (old && old.youthFrom !== undefined && old.youthFrom !== t.youthFrom) {
+      changes.push(`- ${t.name} (item ${id}) youth 12-17: ${old.youthFrom != null ? '£' + old.youthFrom : 'none'} → ${t.youthFrom != null ? '£' + t.youthFrom : 'none'}`);
     }
   });
   Object.entries(feed.groups).forEach(([name, v]) => {
