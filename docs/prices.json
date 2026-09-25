@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-09-25T10:26:29.265Z",
+ "generated": "2026-09-25T12:14:11.982Z",
  "checkedFrom": "20260925",
  "requests": 2305,
  "failedRequests": 0,
@@ -23,7 +23,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 443,
+   "departures": 442,
    "nextDeparture": "20260926"
   },
   "172": {
@@ -44,7 +44,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 376,
+   "departures": 375,
    "nextDeparture": "20261001"
   },
   "174": {
@@ -52,7 +52,7 @@
    "from": 90,
    "deposit": 45,
    "depositPct": 50,
-   "youthFrom": 86,
+   "youthFrom": 85,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -65,7 +65,7 @@
     "20261109"
    ],
    "departuresAtFrom": 152,
-   "departures": 429,
+   "departures": 428,
    "nextDeparture": "20261015"
   },
   "175": {
@@ -226,7 +226,7 @@
    "from": 96,
    "deposit": 48,
    "depositPct": 50,
-   "youthFrom": 90,
+   "youthFrom": 85,
    "selectedDates": false,
    "cheapestDates": [
     "20261025",
@@ -235,8 +235,8 @@
     "20271025"
    ],
    "departuresAtFrom": 4,
-   "departures": 231,
-   "nextDeparture": "20260926"
+   "departures": 230,
+   "nextDeparture": "20260929"
   },
   "282": {
    "name": "5-Day Lewis & Harris, Edinburgh",
@@ -304,7 +304,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 436,
+   "departures": 435,
    "nextDeparture": "20261006"
   },
   "463": {
