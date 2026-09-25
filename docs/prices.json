@@ -1,0 +1,464 @@
+{
+ "version": 1,
+ "generated": "2026-09-25T06:27:39.024Z",
+ "checkedFrom": "20260925",
+ "requests": 2305,
+ "failedRequests": 0,
+ "tours": {
+  "170": {
+   "name": "Glencoe Day Tour, Glasgow",
+   "from": 105,
+   "deposit": 52.5,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20260926",
+    "20260928",
+    "20261003",
+    "20261006",
+    "20261008",
+    "20261010",
+    "20261013",
+    "20261014"
+   ],
+   "departuresAtFrom": 443,
+   "departures": 443,
+   "nextDeparture": "20260926"
+  },
+  "172": {
+   "name": "Standing Stones & Castles Day Tour, Glasgow",
+   "from": 110,
+   "deposit": 55,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261001",
+    "20261002",
+    "20261008",
+    "20261009",
+    "20261010",
+    "20261011",
+    "20261012",
+    "20261015"
+   ],
+   "departuresAtFrom": 378,
+   "departures": 378,
+   "nextDeparture": "20261001"
+  },
+  "174": {
+   "name": "Stirling Castle, Whisky & Loch Lomond Day Tour, Glasgow",
+   "from": 110,
+   "deposit": 55,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261015",
+    "20261016",
+    "20261017",
+    "20261018",
+    "20261019",
+    "20261020",
+    "20261023",
+    "20261024"
+   ],
+   "departuresAtFrom": 429,
+   "departures": 429,
+   "nextDeparture": "20261015"
+  },
+  "175": {
+   "name": "Stirling Castle, Kelpies & Whisky Day Tour, Edinburgh",
+   "from": 115,
+   "deposit": 57.5,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20260930",
+    "20261001",
+    "20261002",
+    "20261005",
+    "20261007",
+    "20261012",
+    "20261013",
+    "20261014"
+   ],
+   "departuresAtFrom": 442,
+   "departures": 442,
+   "nextDeparture": "20260930"
+  },
+  "176": {
+   "name": "Loch Ness Day Tour, Edinburgh",
+   "from": 120,
+   "deposit": 60,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20260926",
+    "20260929",
+    "20261001",
+    "20261003",
+    "20261004",
+    "20261009",
+    "20261012",
+    "20261013"
+   ],
+   "departuresAtFrom": 444,
+   "departures": 444,
+   "nextDeparture": "20260926"
+  },
+  "198": {
+   "name": "3-Day Isle of Skye, Edinburgh",
+   "from": 360,
+   "deposit": 90,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261030",
+    "20261031",
+    "20261102",
+    "20261104",
+    "20261107",
+    "20261109",
+    "20261111",
+    "20261114"
+   ],
+   "departuresAtFrom": 79,
+   "departures": 308,
+   "nextDeparture": "20261014"
+  },
+  "199": {
+   "name": "3-Day Isle of Skye, Glasgow",
+   "from": 360,
+   "deposit": 90,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261031",
+    "20261102",
+    "20261104",
+    "20261107",
+    "20261109",
+    "20261111",
+    "20261114",
+    "20261116"
+   ],
+   "departuresAtFrom": 84,
+   "departures": 308,
+   "nextDeparture": "20261014"
+  },
+  "201": {
+   "name": "3-Day Orkney, Inverness",
+   "from": 440,
+   "deposit": 110,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270404",
+    "20270411",
+    "20270418",
+    "20270425",
+    "20270502",
+    "20270509",
+    "20270516",
+    "20270523"
+   ],
+   "departuresAtFrom": 31,
+   "departures": 31,
+   "nextDeparture": "20270404"
+  },
+  "203": {
+   "name": "5-Day Orkney, Edinburgh",
+   "from": 590,
+   "deposit": 147.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270403",
+    "20270410",
+    "20270417",
+    "20270424",
+    "20270501",
+    "20270508",
+    "20270515",
+    "20270522"
+   ],
+   "departuresAtFrom": 26,
+   "departures": 31,
+   "nextDeparture": "20270403"
+  },
+  "205": {
+   "name": "3-Day Lewis & Harris, Inverness",
+   "from": 450,
+   "deposit": 112.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261006",
+    "20261020",
+    "20270406",
+    "20270420",
+    "20270504",
+    "20270518",
+    "20270601",
+    "20270615"
+   ],
+   "departuresAtFrom": 17,
+   "departures": 17,
+   "nextDeparture": "20261006"
+  },
+  "208": {
+   "name": "St Andrews & Dunfermline Day Tour, Edinburgh",
+   "from": 105,
+   "deposit": 52.5,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20260928",
+    "20261004",
+    "20261010",
+    "20261011",
+    "20261013",
+    "20261015",
+    "20261016",
+    "20261017"
+   ],
+   "departuresAtFrom": 440,
+   "departures": 440,
+   "nextDeparture": "20260928"
+  },
+  "212": {
+   "name": "Outlander Day Tour, Edinburgh",
+   "from": 120,
+   "deposit": 60,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20260926",
+    "20260929",
+    "20261002",
+    "20261004",
+    "20261006",
+    "20261009",
+    "20261013",
+    "20261015"
+   ],
+   "departuresAtFrom": 231,
+   "departures": 231,
+   "nextDeparture": "20260926"
+  },
+  "282": {
+   "name": "5-Day Lewis & Harris, Edinburgh",
+   "from": 590,
+   "deposit": 147.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270405",
+    "20270419",
+    "20270503",
+    "20270517",
+    "20270531",
+    "20270614",
+    "20270628",
+    "20270712"
+   ],
+   "departuresAtFrom": 13,
+   "departures": 17,
+   "nextDeparture": "20261005"
+  },
+  "284": {
+   "name": "5-Day Lewis & Harris, Glasgow",
+   "from": 590,
+   "deposit": 147.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270405",
+    "20270419",
+    "20270503",
+    "20270517",
+    "20270531",
+    "20270614",
+    "20270628",
+    "20270712"
+   ],
+   "departuresAtFrom": 13,
+   "departures": 17,
+   "nextDeparture": "20261005"
+  },
+  "285": {
+   "name": "5-Day Orkney, Glasgow",
+   "from": 590,
+   "deposit": 147.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270403",
+    "20270410",
+    "20270417",
+    "20270424",
+    "20270501",
+    "20270508",
+    "20270515",
+    "20270522"
+   ],
+   "departuresAtFrom": 26,
+   "departures": 31,
+   "nextDeparture": "20270403"
+  },
+  "458": {
+   "name": "Oban & Glencoe Day Tour, Glasgow",
+   "from": 110,
+   "deposit": 55,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261006",
+    "20261010",
+    "20261015",
+    "20261016",
+    "20261017",
+    "20261018",
+    "20261019",
+    "20261020"
+   ],
+   "departuresAtFrom": 437,
+   "departures": 437,
+   "nextDeparture": "20261006"
+  },
+  "463": {
+   "name": "7-Day Skye & Hebrides, Edinburgh",
+   "from": 770,
+   "deposit": 192.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270331",
+    "20270407",
+    "20270414",
+    "20270421"
+   ],
+   "departuresAtFrom": 4,
+   "departures": 31,
+   "nextDeparture": "20270331"
+  },
+  "464": {
+   "name": "7-Day Skye & Hebrides, Glasgow",
+   "from": 770,
+   "deposit": 192.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270331",
+    "20270407",
+    "20270414",
+    "20270421"
+   ],
+   "departuresAtFrom": 4,
+   "departures": 31,
+   "nextDeparture": "20270331"
+  },
+  "465": {
+   "name": "5-Day Isle of Skye, Edinburgh",
+   "from": 550,
+   "deposit": 137.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261110",
+    "20261117",
+    "20261124",
+    "20261201",
+    "20261208",
+    "20261215"
+   ],
+   "departuresAtFrom": 6,
+   "departures": 41,
+   "nextDeparture": "20261020"
+  },
+  "466": {
+   "name": "5-Day Isle of Skye, Glasgow",
+   "from": 550,
+   "deposit": 137.5,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261110",
+    "20261117",
+    "20261124",
+    "20261201",
+    "20261208",
+    "20261215"
+   ],
+   "departuresAtFrom": 6,
+   "departures": 40,
+   "nextDeparture": "20261020"
+  },
+  "468": {
+   "name": "Puffin Boat Trip & Castle Day Tour, Edinburgh",
+   "from": 160,
+   "deposit": 80,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270501",
+    "20270502",
+    "20270503",
+    "20270504",
+    "20270505",
+    "20270506",
+    "20270507",
+    "20270508"
+   ],
+   "departuresAtFrom": 92,
+   "departures": 92,
+   "nextDeparture": "20270501"
+  },
+  "470": {
+   "name": "Alnwick Castle & Rosslyn Chapel Day Tour, Edinburgh",
+   "from": 120,
+   "deposit": 60,
+   "depositPct": 50,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261002",
+    "20261008",
+    "20261012",
+    "20261015",
+    "20261016",
+    "20261017",
+    "20261018",
+    "20261019"
+   ],
+   "departuresAtFrom": 227,
+   "departures": 227,
+   "nextDeparture": "20261002"
+  },
+  "503": {
+   "name": "2-Day Loch Ness, Edinburgh",
+   "from": 220,
+   "deposit": 55,
+   "depositPct": 25,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20261107",
+    "20261121",
+    "20261128",
+    "20261205",
+    "20261212",
+    "20261219"
+   ],
+   "departuresAtFrom": 6,
+   "departures": 7,
+   "nextDeparture": "20261107"
+  }
+ },
+ "groups": {
+  "day": 105,
+  "multi": 220,
+  "edinburghDay": 105,
+  "glasgowDay": 105,
+  "edinburghMulti": 220,
+  "glasgowMulti": 360,
+  "inverness": 440
+ }
+}

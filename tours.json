@@ -1,0 +1,42 @@
+{
+  "_about": "Scotland's Wild price feed settings. The job reads every upcoming departure of these tours from Checkfront and publishes the lowest adult price (the 'from' price) to docs/prices.json.",
+  "checkfront": "https://scotlandswild.checkfront.com/api/3.0",
+  "horizonDays": 460,
+  "categories": [33, 34, 36, 38, 39],
+  "selectedDatesShare": 0,
+  "selectedDatesMinCount": 0,
+  "groups": {
+    "day": [33, 34],
+    "multi": [36, 38, 39],
+    "edinburghDay": [34],
+    "glasgowDay": [33],
+    "edinburghMulti": [36],
+    "glasgowMulti": [38],
+    "inverness": [39]
+  },
+  "tours": {
+    "170": { "name": "Glencoe Day Tour, Glasgow", "category": 33, "depositPct": 50 },
+    "172": { "name": "Standing Stones & Castles Day Tour, Glasgow", "category": 33, "depositPct": 50 },
+    "174": { "name": "Stirling Castle, Whisky & Loch Lomond Day Tour, Glasgow", "category": 33, "depositPct": 50 },
+    "458": { "name": "Oban & Glencoe Day Tour, Glasgow", "category": 33, "depositPct": 50 },
+    "175": { "name": "Stirling Castle, Kelpies & Whisky Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "176": { "name": "Loch Ness Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "208": { "name": "St Andrews & Dunfermline Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "212": { "name": "Outlander Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "468": { "name": "Puffin Boat Trip & Castle Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "470": { "name": "Alnwick Castle & Rosslyn Chapel Day Tour, Edinburgh", "category": 34, "depositPct": 50 },
+    "503": { "name": "2-Day Loch Ness, Edinburgh", "category": 36, "depositPct": 25 },
+    "198": { "name": "3-Day Isle of Skye, Edinburgh", "category": 36, "depositPct": 25 },
+    "465": { "name": "5-Day Isle of Skye, Edinburgh", "category": 36, "depositPct": 25 },
+    "203": { "name": "5-Day Orkney, Edinburgh", "category": 36, "depositPct": 25 },
+    "282": { "name": "5-Day Lewis & Harris, Edinburgh", "category": 36, "depositPct": 25 },
+    "463": { "name": "7-Day Skye & Hebrides, Edinburgh", "category": 36, "depositPct": 25 },
+    "199": { "name": "3-Day Isle of Skye, Glasgow", "category": 38, "depositPct": 25 },
+    "466": { "name": "5-Day Isle of Skye, Glasgow", "category": 38, "depositPct": 25 },
+    "285": { "name": "5-Day Orkney, Glasgow", "category": 38, "depositPct": 25 },
+    "284": { "name": "5-Day Lewis & Harris, Glasgow", "category": 38, "depositPct": 25 },
+    "464": { "name": "7-Day Skye & Hebrides, Glasgow", "category": 38, "depositPct": 25 },
+    "205": { "name": "3-Day Lewis & Harris, Inverness", "category": 39, "depositPct": 25 },
+    "201": { "name": "3-Day Orkney, Inverness", "category": 39, "depositPct": 25 }
+  }
+}
