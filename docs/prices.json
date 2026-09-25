@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-09-25T06:27:39.024Z",
+ "generated": "2026-09-25T07:35:34.061Z",
  "checkedFrom": "20260925",
  "requests": 2305,
  "failedRequests": 0,
@@ -435,8 +435,8 @@
   },
   "503": {
    "name": "2-Day Loch Ness, Edinburgh",
-   "from": 220,
-   "deposit": 55,
+   "from": 196,
+   "deposit": 49,
    "depositPct": 25,
    "selectedDates": false,
    "cheapestDates": [
@@ -454,10 +454,10 @@
  },
  "groups": {
   "day": 105,
-  "multi": 220,
+  "multi": 196,
   "edinburghDay": 105,
   "glasgowDay": 105,
-  "edinburghMulti": 220,
+  "edinburghMulti": 196,
   "glasgowMulti": 360,
   "inverness": 440
  }
