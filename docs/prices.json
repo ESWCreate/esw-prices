@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-25T12:14:11.982Z",
- "checkedFrom": "20260925",
+ "generated": "2026-09-26T00:38:16.037Z",
+ "checkedFrom": "20260926",
  "requests": 2305,
  "failedRequests": 0,
  "tours": {
@@ -65,7 +65,7 @@
     "20261109"
    ],
    "departuresAtFrom": 152,
-   "departures": 428,
+   "departures": 427,
    "nextDeparture": "20261015"
   },
   "175": {
@@ -86,7 +86,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 441,
+   "departures": 442,
    "nextDeparture": "20260930"
   },
   "176": {
@@ -107,7 +107,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 444,
+   "departures": 445,
    "nextDeparture": "20260926"
   },
   "198": {
@@ -218,7 +218,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 440,
+   "departures": 441,
    "nextDeparture": "20260928"
   },
   "212": {
@@ -304,7 +304,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 435,
+   "departures": 433,
    "nextDeparture": "20261006"
   },
   "463": {
@@ -364,7 +364,7 @@
     "20271024"
    ],
    "departuresAtFrom": 2,
-   "departures": 40,
+   "departures": 41,
    "nextDeparture": "20261020"
   },
   "468": {
