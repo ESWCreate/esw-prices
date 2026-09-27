@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-26T00:38:16.037Z",
- "checkedFrom": "20260926",
+ "generated": "2026-09-27T00:40:30.986Z",
+ "checkedFrom": "20260927",
  "requests": 2305,
  "failedRequests": 0,
  "tours": {
@@ -24,7 +24,7 @@
    ],
    "departuresAtFrom": 156,
    "departures": 442,
-   "nextDeparture": "20260926"
+   "nextDeparture": "20260928"
   },
   "172": {
    "name": "Standing Stones & Castles Day Tour, Glasgow",
@@ -44,7 +44,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 375,
+   "departures": 376,
    "nextDeparture": "20261001"
   },
   "174": {
@@ -65,7 +65,7 @@
     "20261109"
    ],
    "departuresAtFrom": 152,
-   "departures": 427,
+   "departures": 428,
    "nextDeparture": "20261015"
   },
   "175": {
@@ -86,7 +86,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 442,
+   "departures": 443,
    "nextDeparture": "20260930"
   },
   "176": {
@@ -108,7 +108,7 @@
    ],
    "departuresAtFrom": 156,
    "departures": 445,
-   "nextDeparture": "20260926"
+   "nextDeparture": "20260929"
   },
   "198": {
    "name": "3-Day Isle of Skye, Edinburgh",
@@ -197,8 +197,8 @@
     "20271019"
    ],
    "departuresAtFrom": 3,
-   "departures": 17,
-   "nextDeparture": "20261006"
+   "departures": 16,
+   "nextDeparture": "20261020"
   },
   "208": {
    "name": "St Andrews & Dunfermline Day Tour, Edinburgh",
@@ -218,7 +218,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 441,
+   "departures": 442,
    "nextDeparture": "20260928"
   },
   "212": {
@@ -251,8 +251,8 @@
     "20271018"
    ],
    "departuresAtFrom": 3,
-   "departures": 17,
-   "nextDeparture": "20261005"
+   "departures": 16,
+   "nextDeparture": "20261019"
   },
   "284": {
    "name": "5-Day Lewis & Harris, Glasgow",
@@ -267,8 +267,8 @@
     "20271018"
    ],
    "departuresAtFrom": 3,
-   "departures": 17,
-   "nextDeparture": "20261005"
+   "departures": 16,
+   "nextDeparture": "20261019"
   },
   "285": {
    "name": "5-Day Orkney, Glasgow",
@@ -304,7 +304,7 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 433,
+   "departures": 434,
    "nextDeparture": "20261006"
   },
   "463": {
