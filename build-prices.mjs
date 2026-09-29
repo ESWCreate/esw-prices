@@ -1,7 +1,9 @@
-// Scotland's Wild price feed builder, v1.1 (25 Sep 2026)
+// Scotland's Wild price feed builder, v1.2 (29 Sep 2026)
 // Reads every upcoming departure from Checkfront, finds each tour's lowest adult
 // price (and lowest youth 12-17 price), and writes docs/prices.json for the website to read.
 // v1.1: adds youthFrom, read from the same Checkfront replies (no extra requests).
+// v1.2: adds `to` (highest adult price on sale) and `lastDeparture`, for the AggregateOffer
+//       price range in each tour page's schema (lowPrice = from, highPrice = to, offerCount = departures).
 // Run by .github/workflows/update-prices.yml. Needs Node 20 or later (the workflow uses 24) (built-in fetch).
 
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
@@ -49,6 +51,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       return;
     }
     const from = Math.min(...list.map(x => x[1]));
+    const to = Math.max(...list.map(x => x[1]));
     const ylist = Object.values(youth[id]);
     const youthFrom = ylist.length ? round2(Math.min(...ylist)) : null;
     const atFrom = list.filter(x => x[1] === from).map(x => x[0]);
@@ -63,7 +66,9 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       cheapestDates: atFrom.slice(0, 8),
       departuresAtFrom: atFrom.length,
       departures: list.length,
-      nextDeparture: list[0][0]
+      nextDeparture: list[0][0],
+      to: round2(to),
+      lastDeparture: list[list.length - 1][0]
     };
   });
 
