@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-09-29T00:41:06.757Z",
- "checkedFrom": "20260929",
+ "generated": "2026-09-30T00:43:09.214Z",
+ "checkedFrom": "20260930",
  "requests": 2305,
  "failedRequests": 0,
  "tours": {
@@ -23,8 +23,10 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 443,
-   "nextDeparture": "20261003"
+   "departures": 444,
+   "nextDeparture": "20261003",
+   "to": 105,
+   "lastDeparture": "20280103"
   },
   "172": {
    "name": "Standing Stones & Castles Day Tour, Glasgow",
@@ -44,8 +46,10 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 378,
-   "nextDeparture": "20261001"
+   "departures": 379,
+   "nextDeparture": "20261001",
+   "to": 110,
+   "lastDeparture": "20280103"
   },
   "174": {
    "name": "Stirling Castle, Whisky & Loch Lomond Day Tour, Glasgow",
@@ -64,9 +68,11 @@
     "20261108",
     "20261109"
    ],
-   "departuresAtFrom": 152,
-   "departures": 427,
-   "nextDeparture": "20261016"
+   "departuresAtFrom": 150,
+   "departures": 425,
+   "nextDeparture": "20261016",
+   "to": 110,
+   "lastDeparture": "20280103"
   },
   "175": {
    "name": "Stirling Castle, Kelpies & Whisky Day Tour, Edinburgh",
@@ -86,8 +92,10 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 445,
-   "nextDeparture": "20260930"
+   "departures": 444,
+   "nextDeparture": "20261001",
+   "to": 115,
+   "lastDeparture": "20280103"
   },
   "176": {
    "name": "Loch Ness Day Tour, Edinburgh",
@@ -108,7 +116,9 @@
    ],
    "departuresAtFrom": 156,
    "departures": 447,
-   "nextDeparture": "20260929"
+   "nextDeparture": "20261001",
+   "to": 120,
+   "lastDeparture": "20280103"
   },
   "198": {
    "name": "3-Day Isle of Skye, Edinburgh",
@@ -129,7 +139,9 @@
    ],
    "departuresAtFrom": 46,
    "departures": 307,
-   "nextDeparture": "20261014"
+   "nextDeparture": "20261014",
+   "to": 420,
+   "lastDeparture": "20271228"
   },
   "199": {
    "name": "3-Day Isle of Skye, Glasgow",
@@ -150,7 +162,9 @@
    ],
    "departuresAtFrom": 46,
    "departures": 307,
-   "nextDeparture": "20261014"
+   "nextDeparture": "20261014",
+   "to": 420,
+   "lastDeparture": "20271228"
   },
   "201": {
    "name": "3-Day Orkney, Inverness",
@@ -166,7 +180,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 31,
-   "nextDeparture": "20270404"
+   "nextDeparture": "20270404",
+   "to": 440,
+   "lastDeparture": "20271031"
   },
   "203": {
    "name": "5-Day Orkney, Edinburgh",
@@ -182,7 +198,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 31,
-   "nextDeparture": "20270403"
+   "nextDeparture": "20270403",
+   "to": 640,
+   "lastDeparture": "20271030"
   },
   "205": {
    "name": "3-Day Lewis & Harris, Inverness",
@@ -198,7 +216,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 16,
-   "nextDeparture": "20261020"
+   "nextDeparture": "20261020",
+   "to": 450,
+   "lastDeparture": "20271019"
   },
   "208": {
    "name": "St Andrews & Dunfermline Day Tour, Edinburgh",
@@ -209,17 +229,19 @@
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
-    "20261102",
     "20261103",
     "20261104",
     "20261105",
     "20261106",
     "20261107",
-    "20261108"
+    "20261108",
+    "20261110"
    ],
-   "departuresAtFrom": 156,
-   "departures": 442,
-   "nextDeparture": "20261004"
+   "departuresAtFrom": 141,
+   "departures": 420,
+   "nextDeparture": "20261004",
+   "to": 105,
+   "lastDeparture": "20280103"
   },
   "212": {
    "name": "Outlander Day Tour, Edinburgh",
@@ -236,7 +258,9 @@
    ],
    "departuresAtFrom": 4,
    "departures": 229,
-   "nextDeparture": "20261002"
+   "nextDeparture": "20261002",
+   "to": 120,
+   "lastDeparture": "20271025"
   },
   "282": {
    "name": "5-Day Lewis & Harris, Edinburgh",
@@ -252,7 +276,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 16,
-   "nextDeparture": "20261019"
+   "nextDeparture": "20261019",
+   "to": 640,
+   "lastDeparture": "20271018"
   },
   "284": {
    "name": "5-Day Lewis & Harris, Glasgow",
@@ -268,7 +294,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 16,
-   "nextDeparture": "20261019"
+   "nextDeparture": "20261019",
+   "to": 640,
+   "lastDeparture": "20271018"
   },
   "285": {
    "name": "5-Day Orkney, Glasgow",
@@ -284,7 +312,9 @@
    ],
    "departuresAtFrom": 3,
    "departures": 31,
-   "nextDeparture": "20270403"
+   "nextDeparture": "20270403",
+   "to": 640,
+   "lastDeparture": "20271030"
   },
   "458": {
    "name": "Oban & Glencoe Day Tour, Glasgow",
@@ -304,8 +334,10 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 436,
-   "nextDeparture": "20261006"
+   "departures": 437,
+   "nextDeparture": "20261006",
+   "to": 110,
+   "lastDeparture": "20280103"
   },
   "463": {
    "name": "7-Day Skye & Hebrides, Edinburgh",
@@ -320,7 +352,9 @@
    ],
    "departuresAtFrom": 2,
    "departures": 31,
-   "nextDeparture": "20270331"
+   "nextDeparture": "20270331",
+   "to": 875,
+   "lastDeparture": "20271027"
   },
   "464": {
    "name": "7-Day Skye & Hebrides, Glasgow",
@@ -335,7 +369,9 @@
    ],
    "departuresAtFrom": 2,
    "departures": 31,
-   "nextDeparture": "20270331"
+   "nextDeparture": "20270331",
+   "to": 875,
+   "lastDeparture": "20271027"
   },
   "465": {
    "name": "5-Day Isle of Skye, Edinburgh",
@@ -350,7 +386,9 @@
    ],
    "departuresAtFrom": 2,
    "departures": 41,
-   "nextDeparture": "20261020"
+   "nextDeparture": "20261020",
+   "to": 640,
+   "lastDeparture": "20271227"
   },
   "466": {
    "name": "5-Day Isle of Skye, Glasgow",
@@ -365,7 +403,9 @@
    ],
    "departuresAtFrom": 2,
    "departures": 41,
-   "nextDeparture": "20261020"
+   "nextDeparture": "20261020",
+   "to": 640,
+   "lastDeparture": "20271227"
   },
   "468": {
    "name": "Puffin Boat Trip & Castle Day Tour, Edinburgh",
@@ -380,7 +420,9 @@
    ],
    "departuresAtFrom": 2,
    "departures": 92,
-   "nextDeparture": "20270501"
+   "nextDeparture": "20270501",
+   "to": 160,
+   "lastDeparture": "20270731"
   },
   "470": {
    "name": "Alnwick Castle & Rosslyn Chapel Day Tour, Edinburgh",
@@ -397,7 +439,9 @@
    ],
    "departuresAtFrom": 4,
    "departures": 227,
-   "nextDeparture": "20261002"
+   "nextDeparture": "20261002",
+   "to": 120,
+   "lastDeparture": "20271025"
   },
   "503": {
    "name": "2-Day Loch Ness, Edinburgh",
@@ -418,7 +462,9 @@
    ],
    "departuresAtFrom": 17,
    "departures": 57,
-   "nextDeparture": "20261107"
+   "nextDeparture": "20261107",
+   "to": 252,
+   "lastDeparture": "20271218"
   }
  },
  "groups": {
