@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-10-01T00:44:43.108Z",
+ "generated": "2026-10-01T14:42:13.814Z",
  "checkedFrom": "20261001",
  "requests": 2305,
  "failedRequests": 0,
@@ -46,8 +46,8 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 380,
-   "nextDeparture": "20261001",
+   "departures": 379,
+   "nextDeparture": "20261002",
    "to": 110,
    "lastDeparture": "20280104"
   },
@@ -92,8 +92,8 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 444,
-   "nextDeparture": "20261002",
+   "departures": 443,
+   "nextDeparture": "20261005",
    "to": 115,
    "lastDeparture": "20280104"
   },
@@ -115,8 +115,8 @@
     "20261108"
    ],
    "departuresAtFrom": 156,
-   "departures": 448,
-   "nextDeparture": "20261001",
+   "departures": 446,
+   "nextDeparture": "20261004",
    "to": 120,
    "lastDeparture": "20280104"
   },
@@ -125,7 +125,7 @@
    "from": 248,
    "deposit": 62,
    "depositPct": 25,
-   "youthFrom": 200,
+   "youthFrom": 228,
    "selectedDates": false,
    "cheapestDates": [
     "20270104",
@@ -138,7 +138,7 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 307,
+   "departures": 306,
    "nextDeparture": "20261014",
    "to": 420,
    "lastDeparture": "20271228"
@@ -148,7 +148,7 @@
    "from": 248,
    "deposit": 62,
    "depositPct": 25,
-   "youthFrom": 200,
+   "youthFrom": 228,
    "selectedDates": false,
    "cheapestDates": [
     "20270104",
@@ -161,7 +161,7 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 307,
+   "departures": 306,
    "nextDeparture": "20261014",
    "to": 420,
    "lastDeparture": "20271228"
