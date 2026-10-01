@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-10-01T14:42:13.814Z",
+ "generated": "2026-10-01T15:37:55.045Z",
  "checkedFrom": "20261001",
  "requests": 2305,
  "failedRequests": 0,
@@ -10,7 +10,7 @@
    "from": 88,
    "deposit": 44,
    "depositPct": 50,
-   "youthFrom": 84,
+   "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -25,7 +25,7 @@
    "departuresAtFrom": 156,
    "departures": 445,
    "nextDeparture": "20261003",
-   "to": 105,
+   "to": 104,
    "lastDeparture": "20280104"
   },
   "172": {
@@ -33,7 +33,7 @@
    "from": 90,
    "deposit": 45,
    "depositPct": 50,
-   "youthFrom": 86,
+   "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -56,7 +56,7 @@
    "from": 90,
    "deposit": 45,
    "depositPct": 50,
-   "youthFrom": 85,
+   "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -71,7 +71,7 @@
    "departuresAtFrom": 150,
    "departures": 426,
    "nextDeparture": "20261016",
-   "to": 110,
+   "to": 100,
    "lastDeparture": "20280104"
   },
   "175": {
@@ -79,7 +79,7 @@
    "from": 92,
    "deposit": 46,
    "depositPct": 50,
-   "youthFrom": 86,
+   "youthFrom": 82,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -94,7 +94,7 @@
    "departuresAtFrom": 156,
    "departures": 443,
    "nextDeparture": "20261005",
-   "to": 115,
+   "to": 114,
    "lastDeparture": "20280104"
   },
   "176": {
@@ -102,7 +102,7 @@
    "from": 96,
    "deposit": 48,
    "depositPct": 50,
-   "youthFrom": 90,
+   "youthFrom": 86,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -138,8 +138,8 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 306,
-   "nextDeparture": "20261014",
+   "departures": 305,
+   "nextDeparture": "20261022",
    "to": 420,
    "lastDeparture": "20271228"
   },
@@ -161,8 +161,8 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 306,
-   "nextDeparture": "20261014",
+   "departures": 305,
+   "nextDeparture": "20261022",
    "to": 420,
    "lastDeparture": "20271228"
   },
@@ -171,7 +171,7 @@
    "from": 316,
    "deposit": 79,
    "depositPct": 25,
-   "youthFrom": 292,
+   "youthFrom": 296,
    "selectedDates": false,
    "cheapestDates": [
     "20270404",
@@ -189,7 +189,7 @@
    "from": 428,
    "deposit": 107,
    "depositPct": 25,
-   "youthFrom": 416,
+   "youthFrom": 403,
    "selectedDates": false,
    "cheapestDates": [
     "20270403",
@@ -207,14 +207,13 @@
    "from": 316,
    "deposit": 79,
    "depositPct": 25,
-   "youthFrom": 284,
+   "youthFrom": 296,
    "selectedDates": false,
    "cheapestDates": [
     "20270406",
-    "20271005",
     "20271019"
    ],
-   "departuresAtFrom": 3,
+   "departuresAtFrom": 2,
    "departures": 16,
    "nextDeparture": "20261020",
    "to": 450,
@@ -225,7 +224,7 @@
    "from": 88,
    "deposit": 44,
    "depositPct": 50,
-   "youthFrom": 84,
+   "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
     "20261103",
@@ -240,7 +239,7 @@
    "departuresAtFrom": 125,
    "departures": 395,
    "nextDeparture": "20261010",
-   "to": 105,
+   "to": 104,
    "lastDeparture": "20280104"
   },
   "212": {
@@ -248,7 +247,7 @@
    "from": 96,
    "deposit": 48,
    "depositPct": 50,
-   "youthFrom": 85,
+   "youthFrom": 86,
    "selectedDates": false,
    "cheapestDates": [
     "20261025",
@@ -267,14 +266,13 @@
    "from": 428,
    "deposit": 107,
    "depositPct": 25,
-   "youthFrom": 416,
+   "youthFrom": 403,
    "selectedDates": false,
    "cheapestDates": [
     "20270405",
-    "20271004",
     "20271018"
    ],
-   "departuresAtFrom": 3,
+   "departuresAtFrom": 2,
    "departures": 16,
    "nextDeparture": "20261019",
    "to": 640,
@@ -285,14 +283,13 @@
    "from": 428,
    "deposit": 107,
    "depositPct": 25,
-   "youthFrom": 416,
+   "youthFrom": 403,
    "selectedDates": false,
    "cheapestDates": [
     "20270405",
-    "20271004",
     "20271018"
    ],
-   "departuresAtFrom": 3,
+   "departuresAtFrom": 2,
    "departures": 16,
    "nextDeparture": "20261019",
    "to": 640,
@@ -303,7 +300,7 @@
    "from": 428,
    "deposit": 107,
    "depositPct": 25,
-   "youthFrom": 416,
+   "youthFrom": 403,
    "selectedDates": false,
    "cheapestDates": [
     "20270403",
@@ -321,7 +318,7 @@
    "from": 88,
    "deposit": 44,
    "depositPct": 50,
-   "youthFrom": 84,
+   "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
@@ -336,7 +333,7 @@
    "departuresAtFrom": 156,
    "departures": 437,
    "nextDeparture": "20261015",
-   "to": 110,
+   "to": 100,
    "lastDeparture": "20280104"
   },
   "463": {
@@ -344,7 +341,7 @@
    "from": 556,
    "deposit": 139,
    "depositPct": 25,
-   "youthFrom": 508,
+   "youthFrom": 531,
    "selectedDates": false,
    "cheapestDates": [
     "20270407",
@@ -353,7 +350,7 @@
    "departuresAtFrom": 2,
    "departures": 31,
    "nextDeparture": "20270331",
-   "to": 875,
+   "to": 876,
    "lastDeparture": "20271027"
   },
   "464": {
@@ -361,7 +358,7 @@
    "from": 556,
    "deposit": 139,
    "depositPct": 25,
-   "youthFrom": 508,
+   "youthFrom": 531,
    "selectedDates": false,
    "cheapestDates": [
     "20270407",
@@ -370,15 +367,15 @@
    "departuresAtFrom": 2,
    "departures": 31,
    "nextDeparture": "20270331",
-   "to": 875,
+   "to": 876,
    "lastDeparture": "20271027"
   },
   "465": {
    "name": "5-Day Isle of Skye, Edinburgh",
-   "from": 396,
-   "deposit": 99,
+   "from": 444,
+   "deposit": 111,
    "depositPct": 25,
-   "youthFrom": 368,
+   "youthFrom": 419,
    "selectedDates": false,
    "cheapestDates": [
     "20270404",
@@ -392,10 +389,10 @@
   },
   "466": {
    "name": "5-Day Isle of Skye, Glasgow",
-   "from": 396,
-   "deposit": 99,
+   "from": 444,
+   "deposit": 111,
    "depositPct": 25,
-   "youthFrom": 368,
+   "youthFrom": 419,
    "selectedDates": false,
    "cheapestDates": [
     "20270404",
@@ -421,7 +418,7 @@
    "departuresAtFrom": 2,
    "departures": 92,
    "nextDeparture": "20270501",
-   "to": 160,
+   "to": 168,
    "lastDeparture": "20270731"
   },
   "470": {
@@ -440,7 +437,7 @@
    "departuresAtFrom": 4,
    "departures": 227,
    "nextDeparture": "20261002",
-   "to": 120,
+   "to": 112,
    "lastDeparture": "20271025"
   },
   "503": {
@@ -448,7 +445,7 @@
    "from": 196,
    "deposit": 49,
    "depositPct": 25,
-   "youthFrom": 184,
+   "youthFrom": 176,
    "selectedDates": false,
    "cheapestDates": [
     "20261107",
