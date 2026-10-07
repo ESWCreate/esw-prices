@@ -1,8 +1,8 @@
 {
  "version": 1,
- "generated": "2026-10-07T00:47:27.389Z",
+ "generated": "2026-10-07T12:02:23.350Z",
  "checkedFrom": "20261007",
- "requests": 2305,
+ "requests": 2766,
  "failedRequests": 0,
  "tours": {
   "170": {
@@ -23,7 +23,7 @@
     "20261109"
    ],
    "departuresAtFrom": 155,
-   "departures": 446,
+   "departures": 445,
    "nextDeparture": "20261010",
    "to": 104,
    "lastDeparture": "20280110"
@@ -92,7 +92,7 @@
     "20261109"
    ],
    "departuresAtFrom": 155,
-   "departures": 446,
+   "departures": 445,
    "nextDeparture": "20261012",
    "to": 114,
    "lastDeparture": "20280110"
@@ -237,7 +237,7 @@
     "20261112"
    ],
    "departuresAtFrom": 125,
-   "departures": 400,
+   "departures": 399,
    "nextDeparture": "20261010",
    "to": 104,
    "lastDeparture": "20280110"
@@ -256,7 +256,7 @@
     "20271025"
    ],
    "departuresAtFrom": 4,
-   "departures": 226,
+   "departures": 225,
    "nextDeparture": "20261009",
    "to": 120,
    "lastDeparture": "20271025"
@@ -429,13 +429,12 @@
    "youthFrom": null,
    "selectedDates": false,
    "cheapestDates": [
-    "20261025",
     "20270327",
     "20271024",
     "20271025"
    ],
-   "departuresAtFrom": 4,
-   "departures": 225,
+   "departuresAtFrom": 3,
+   "departures": 223,
    "nextDeparture": "20261008",
    "to": 112,
    "lastDeparture": "20271025"
@@ -462,6 +461,75 @@
    "nextDeparture": "20261107",
    "to": 252,
    "lastDeparture": "20271218"
+  },
+  "726": {
+   "name": "Isle of Skye Day Tour, Inverness",
+   "from": 98,
+   "deposit": 49,
+   "depositPct": 50,
+   "youthFrom": 88,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270401",
+    "20270403",
+    "20270404",
+    "20270406",
+    "20270408",
+    "20270410",
+    "20270411",
+    "20270413"
+   ],
+   "departuresAtFrom": 27,
+   "departures": 123,
+   "nextDeparture": "20270401",
+   "to": 108,
+   "lastDeparture": "20271031"
+  },
+  "727": {
+   "name": "Loch Ness, Culloden & Outlander Day Tour, Inverness",
+   "from": 88,
+   "deposit": 44,
+   "depositPct": 50,
+   "youthFrom": 78,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270401",
+    "20270403",
+    "20270404",
+    "20270406",
+    "20270408",
+    "20270410",
+    "20270411",
+    "20270413"
+   ],
+   "departuresAtFrom": 27,
+   "departures": 123,
+   "nextDeparture": "20270401",
+   "to": 98,
+   "lastDeparture": "20271031"
+  },
+  "729": {
+   "name": "Glenfinnan Viaduct & Cairngorms Day Tour, Inverness",
+   "from": 98,
+   "deposit": 49,
+   "depositPct": 50,
+   "youthFrom": 88,
+   "selectedDates": false,
+   "cheapestDates": [
+    "20270401",
+    "20270403",
+    "20270404",
+    "20270406",
+    "20270408",
+    "20270410",
+    "20270411",
+    "20270413"
+   ],
+   "departuresAtFrom": 27,
+   "departures": 123,
+   "nextDeparture": "20270401",
+   "to": 108,
+   "lastDeparture": "20271031"
   }
  },
  "groups": {
@@ -471,6 +539,7 @@
   "glasgowDay": 88,
   "edinburghMulti": 196,
   "glasgowMulti": 248,
-  "inverness": 316
+  "inverness": 316,
+  "invernessDay": 88
  }
 }
