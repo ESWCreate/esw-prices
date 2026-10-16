@@ -4,9 +4,12 @@
 // v1.1: adds youthFrom, read from the same Checkfront replies (no extra requests).
 // v1.2: adds `to` (highest adult price on sale) and `lastDeparture`, for the AggregateOffer
 //       price range in each tour page's schema (lowPrice = from, highPrice = to, offerCount = departures).
+// v1.3 (16 Oct 2026): also writes docs/departures/<item>.json for the tour-page booking panel's calendar:
+//   {v, generated, item, d: {yyyymmdd: [adultPrice, youthPrice, seatsLeft]}}, [0,0,0] = sold out.
+//   Same Checkfront replies as before (no extra requests). prices.json is unchanged.
 // Run by .github/workflows/update-prices.yml. Needs Node 20 or later (the workflow uses 24) (built-in fetch).
 
-import { readFile, writeFile, appendFile } from 'node:fs/promises';
+import { readFile, writeFile, appendFile, mkdir } from 'node:fs/promises';
 
 // ---------- core (no Node-only code, so it can also be tested in a browser) ----------
 export async function computeFeed(config, fetchJson, now = new Date()) {
@@ -16,7 +19,9 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
 
   const departures = {};            // id -> { yyyymmdd: adultPrice }
   const youth = {};                 // id -> { yyyymmdd: youthPrice }
-  Object.keys(config.tours).forEach(id => { departures[id] = {}; youth[id] = {}; });
+  const seats = {};                 // id -> { yyyymmdd: seats left }
+  const soldOut = {};               // id -> { yyyymmdd: true }
+  Object.keys(config.tours).forEach(id => { departures[id] = {}; youth[id] = {}; seats[id] = {}; soldOut[id] = {}; });
 
   const jobs = [];
   config.categories.forEach(cat => dates.forEach(d => jobs.push({ cat, d })));
@@ -31,6 +36,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
     Object.values(items).forEach(item => {
       const id = String(item.item_id);
       const rate = item.rate || {};
+      if (departures[id] && rate.status === 'SOLDOUT' && d >= today) { soldOut[id][d] = true; return; }
       if (!departures[id] || rate.status !== 'AVAILABLE' || !rate.slip) return;
       const m = String(rate.slip).match(/^\d+\.(\d{8})/);
       if (!m || m[1] < today) return;
@@ -38,6 +44,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       const adult = Number(rate.sub_total);
       if (!(available > 0) || !(adult > 0)) return;
       departures[id][m[1]] = adult;
+      seats[id][m[1]] = available;
       const y = youthPrice(rate, m[1], adult);
       if (y > 0) youth[id][m[1]] = y;
     });
@@ -80,7 +87,17 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
     groups[name] = vals.length ? Math.min(...vals) : null;
   });
 
+  // v1.3: per-tour departure lists for the booking panel (kept out of prices.json).
+  const departureLists = {};
+  Object.keys(config.tours).forEach(id => {
+    const d = {};
+    Object.keys(soldOut[id]).forEach(k => { if (!departures[id][k]) d[k] = [0, 0, 0]; });
+    Object.entries(departures[id]).forEach(([k, a]) => { d[k] = [round2(a), youth[id][k] ? round2(youth[id][k]) : 0, seats[id][k] || 0]; });
+    departureLists[id] = Object.fromEntries(Object.entries(d).sort((x, y) => x[0].localeCompare(y[0])));
+  });
+
   return {
+    departureLists,
     version: 1,
     generated: now.toISOString(),
     checkedFrom: today,
@@ -143,6 +160,8 @@ async function main() {
   };
 
   const feed = await computeFeed(config, fetchJson);
+  const departureLists = feed.departureLists;
+  delete feed.departureLists;
 
   // Safety checks: never publish a broken or half-empty feed.
   const total = Object.values(feed.tours).reduce((s, t) => s + t.departures, 0);
@@ -180,6 +199,12 @@ async function main() {
   const prevDay = previous && previous.checkedFrom;
   const changed = changes.length > 0 || prevDay !== today;
   if (changed) await writeFile('docs/prices.json', JSON.stringify(feed, null, 1) + '\n');
+
+  // v1.3: one small file per tour for the booking panel's calendar (written every run: seats change).
+  await mkdir('docs/departures', { recursive: true });
+  for (const [id, d] of Object.entries(departureLists)) {
+    await writeFile(`docs/departures/${id}.json`, JSON.stringify({ v: 1, generated: feed.generated, item: Number(id), d }) + '\n');
+  }
 
   if (changes.length && previous) {
     await writeFile('changes.md', [
