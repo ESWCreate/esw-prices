@@ -7,6 +7,10 @@
 // v1.3 (16 Oct 2026): also writes docs/departures/<item>.json for the tour-page booking panel's calendar:
 //   {v, generated, item, d: {yyyymmdd: [adultPrice, youthPrice, seatsLeft]}}, [0,0,0] = sold out.
 //   Same Checkfront replies as before (no extra requests). prices.json is unchanged.
+// v1.4 (17 Oct 2026): no more £0 youth prices. A departure that spans two seasons (two invoice lines,
+//   e.g. 1 Mar, 1-2 May, 30 Oct) has no single per-day youth price, so the feed left it at 0. For those
+//   dates only, it now asks Checkfront for 1 adult + 1 youth and takes the difference: the exact youth
+//   price a guest pays. Only for tours that have youth prices on other dates (a dozen extra requests).
 // Run by .github/workflows/update-prices.yml. Needs Node 20 or later (the workflow uses 24) (built-in fetch).
 
 import { readFile, writeFile, appendFile, mkdir } from 'node:fs/promises';
@@ -48,6 +52,22 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       const y = youthPrice(rate, m[1], adult);
       if (y > 0) youth[id][m[1]] = y;
     });
+  });
+
+  // v1.4: youth price for departures where the per-day price couldn't give one (season boundaries).
+  const missing = [];
+  Object.keys(config.tours).forEach(id => {
+    if (!Object.keys(youth[id]).length) return; // tour has no youth prices at all
+    Object.keys(departures[id]).forEach(d => { if (!youth[id][d]) missing.push({ id, d }); });
+  });
+  await pool(missing, 4, async ({ id, d }) => {
+    const url = `${config.checkfront}/item/${id}?start_date=${d}&end_date=${d}&param[adults]=1&param[children]=1`;
+    let data;
+    try { data = await fetchJson(url); } catch (e) { failures += 1; lastError = String(e && e.message || e); return; }
+    const rate = (data && data.item && data.item.rate) || {};
+    if (rate.status !== 'AVAILABLE' || !rate.slip || String(rate.slip).indexOf('.' + d) === -1) return;
+    const y = round2(Number(rate.sub_total) - departures[id][d]);
+    if (y > 0) youth[id][d] = y;
   });
 
   const tours = {};
@@ -101,7 +121,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
     version: 1,
     generated: now.toISOString(),
     checkedFrom: today,
-    requests: jobs.length,
+    requests: jobs.length + missing.length,
     failedRequests: failures,
     lastError: lastError || undefined,
     tours,
