@@ -1,8 +1,8 @@
 {
  "version": 1,
- "generated": "2026-10-17T01:02:15.148Z",
+ "generated": "2026-10-17T19:57:20.813Z",
  "checkedFrom": "20261017",
- "requests": 2766,
+ "requests": 2788,
  "failedRequests": 0,
  "tours": {
   "170": {
@@ -23,8 +23,8 @@
     "20261109"
    ],
    "departuresAtFrom": 153,
-   "departures": 443,
-   "nextDeparture": "20261017",
+   "departures": 442,
+   "nextDeparture": "20261020",
    "to": 104,
    "lastDeparture": "20280120"
   },
@@ -92,8 +92,8 @@
     "20261109"
    ],
    "departuresAtFrom": 152,
-   "departures": 442,
-   "nextDeparture": "20261018",
+   "departures": 441,
+   "nextDeparture": "20261019",
    "to": 114,
    "lastDeparture": "20280120"
   },
@@ -408,7 +408,7 @@
    "from": 142,
    "deposit": 71,
    "depositPct": 50,
-   "youthFrom": null,
+   "youthFrom": 132,
    "selectedDates": false,
    "cheapestDates": [
     "20270501",
@@ -425,7 +425,7 @@
    "from": 96,
    "deposit": 48,
    "depositPct": 50,
-   "youthFrom": null,
+   "youthFrom": 86,
    "selectedDates": false,
    "cheapestDates": [
     "20270327",
