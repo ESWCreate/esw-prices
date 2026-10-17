@@ -11,6 +11,9 @@
 //   e.g. 1 Mar, 1-2 May, 30 Oct) has no single per-day youth price, so the feed left it at 0. For those
 //   dates only, it now asks Checkfront for 1 adult + 1 youth and takes the difference: the exact youth
 //   price a guest pays. Only for tours that have youth prices on other dates (a dozen extra requests).
+// v1.5 (17 Oct 2026): a tour can name its own second traveller parameter in tours.json ("youthParam"),
+//   e.g. "childaged715" (Child 7-17) on the Puffin and Alnwick tours; default stays "children" (Youth 12-17).
+//   youthFrom and the departures files then carry that price for those tours too.
 // Run by .github/workflows/update-prices.yml. Needs Node 20 or later (the workflow uses 24) (built-in fetch).
 
 import { readFile, writeFile, appendFile, mkdir } from 'node:fs/promises';
@@ -49,7 +52,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
       if (!(available > 0) || !(adult > 0)) return;
       departures[id][m[1]] = adult;
       seats[id][m[1]] = available;
-      const y = youthPrice(rate, m[1], adult);
+      const y = youthPrice(rate, m[1], adult, config.tours[id].youthParam || 'children');
       if (y > 0) youth[id][m[1]] = y;
     });
   });
@@ -61,7 +64,7 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
     Object.keys(departures[id]).forEach(d => { if (!youth[id][d]) missing.push({ id, d }); });
   });
   await pool(missing, 4, async ({ id, d }) => {
-    const url = `${config.checkfront}/item/${id}?start_date=${d}&end_date=${d}&param[adults]=1&param[children]=1`;
+    const url = `${config.checkfront}/item/${id}?start_date=${d}&end_date=${d}&param[adults]=1&param[${config.tours[id].youthParam || 'children'}]=1`;
     let data;
     try { data = await fetchJson(url); } catch (e) { failures += 1; lastError = String(e && e.message || e); return; }
     const rate = (data && data.item && data.item.rate) || {};
@@ -133,10 +136,10 @@ export async function computeFeed(config, fetchJson, now = new Date()) {
 // Checkfront calls this parameter "children" (labelled "Youth (12-17)"). The per-date price
 // is only used when the reply is for that exact date and its adult price matches, so a
 // departure that Checkfront "snapped" to from a nearby date never gives a wrong youth price.
-function youthPrice(rate, yyyymmdd, adult) {
+function youthPrice(rate, yyyymmdd, adult, param) {
   const day = rate.dates && rate.dates[yyyymmdd];
   if (!day || !day.price || Number(day.price.adults) !== adult) return 0;
-  const v = Number(day.price.children);
+  const v = Number(day.price[param || 'children']);
   return v > 0 ? v : 0;
 }
 
