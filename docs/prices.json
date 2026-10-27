@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-10-26T04:58:32.279Z",
- "checkedFrom": "20261026",
+ "generated": "2026-10-27T05:16:13.792Z",
+ "checkedFrom": "20261027",
  "requests": 2788,
  "failedRequests": 0,
  "tours": {
@@ -26,7 +26,7 @@
    "departures": 449,
    "nextDeparture": "20261027",
    "to": 104,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "172": {
    "name": "Standing Stones & Castles Day Tour, Glasgow",
@@ -36,20 +36,20 @@
    "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
-    "20261101",
     "20261103",
     "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
-    "20261109"
+    "20261109",
+    "20261110"
    ],
-   "departuresAtFrom": 154,
+   "departuresAtFrom": 153,
    "departures": 387,
    "nextDeparture": "20261029",
    "to": 110,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "174": {
    "name": "Stirling Castle, Whisky & Loch Lomond Day Tour, Glasgow",
@@ -59,20 +59,20 @@
    "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
-    "20261101",
     "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
     "20261109",
-    "20261113"
+    "20261113",
+    "20261114"
    ],
-   "departuresAtFrom": 143,
+   "departuresAtFrom": 142,
    "departures": 435,
-   "nextDeparture": "20261101",
+   "nextDeparture": "20261104",
    "to": 100,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "175": {
    "name": "Stirling Castle, Kelpies & Whisky Day Tour, Edinburgh",
@@ -82,20 +82,20 @@
    "youthFrom": 82,
    "selectedDates": false,
    "cheapestDates": [
-    "20261101",
     "20261103",
     "20261104",
     "20261105",
     "20261106",
     "20261108",
     "20261109",
-    "20261110"
+    "20261110",
+    "20261111"
    ],
-   "departuresAtFrom": 151,
-   "departures": 445,
-   "nextDeparture": "20261028",
+   "departuresAtFrom": 150,
+   "departures": 442,
+   "nextDeparture": "20261103",
    "to": 114,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "176": {
    "name": "Loch Ness Day Tour, Edinburgh",
@@ -118,7 +118,7 @@
    "departures": 452,
    "nextDeparture": "20261027",
    "to": 120,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "198": {
    "name": "3-Day Isle of Skye, Edinburgh",
@@ -138,7 +138,7 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 291,
+   "departures": 290,
    "nextDeparture": "20261114",
    "to": 420,
    "lastDeparture": "20271228"
@@ -161,7 +161,7 @@
     "20270120"
    ],
    "departuresAtFrom": 46,
-   "departures": 291,
+   "departures": 290,
    "nextDeparture": "20261114",
    "to": 420,
    "lastDeparture": "20271228"
@@ -237,10 +237,10 @@
     "20261112"
    ],
    "departuresAtFrom": 123,
-   "departures": 406,
+   "departures": 405,
    "nextDeparture": "20261029",
    "to": 104,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "212": {
    "name": "Outlander Day Tour, Edinburgh",
@@ -320,20 +320,20 @@
    "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
-    "20261101",
     "20261103",
     "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
-    "20261109"
+    "20261109",
+    "20261110"
    ],
-   "departuresAtFrom": 153,
-   "departures": 447,
-   "nextDeparture": "20261028",
+   "departuresAtFrom": 152,
+   "departures": 446,
+   "nextDeparture": "20261103",
    "to": 100,
-   "lastDeparture": "20280129"
+   "lastDeparture": "20280130"
   },
   "463": {
    "name": "7-Day Skye & Hebrides, Edinburgh",
@@ -447,16 +447,16 @@
    "selectedDates": false,
    "cheapestDates": [
     "20261107",
-    "20261121",
-    "20261128",
     "20261205",
     "20261212",
     "20270109",
     "20270116",
-    "20270123"
+    "20270123",
+    "20270130",
+    "20270206"
    ],
-   "departuresAtFrom": 16,
-   "departures": 56,
+   "departuresAtFrom": 14,
+   "departures": 54,
    "nextDeparture": "20261107",
    "to": 252,
    "lastDeparture": "20271218"
