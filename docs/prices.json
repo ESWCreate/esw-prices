@@ -1,7 +1,7 @@
 {
  "version": 1,
- "generated": "2026-10-30T06:00:17.774Z",
- "checkedFrom": "20261030",
+ "generated": "2026-10-31T05:55:48.992Z",
+ "checkedFrom": "20261031",
  "requests": 2788,
  "failedRequests": 0,
  "tours": {
@@ -13,20 +13,20 @@
    "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
-    "20261101",
-    "20261103",
-    "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
-    "20261109"
+    "20261109",
+    "20261110",
+    "20261111",
+    "20261112"
    ],
-   "departuresAtFrom": 153,
-   "departures": 450,
-   "nextDeparture": "20261101",
+   "departuresAtFrom": 150,
+   "departures": 448,
+   "nextDeparture": "20261105",
    "to": 104,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "172": {
    "name": "Standing Stones & Castles Day Tour, Glasgow",
@@ -36,20 +36,20 @@
    "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
-    "20261103",
-    "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
     "20261109",
-    "20261110"
+    "20261110",
+    "20261111",
+    "20261112"
    ],
-   "departuresAtFrom": 153,
-   "departures": 388,
-   "nextDeparture": "20261103",
+   "departuresAtFrom": 151,
+   "departures": 387,
+   "nextDeparture": "20261105",
    "to": 110,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "174": {
    "name": "Stirling Castle, Whisky & Loch Lomond Day Tour, Glasgow",
@@ -59,20 +59,20 @@
    "youthFrom": 80,
    "selectedDates": false,
    "cheapestDates": [
-    "20261104",
     "20261105",
     "20261107",
     "20261108",
     "20261109",
     "20261113",
     "20261114",
-    "20261115"
+    "20261115",
+    "20261116"
    ],
-   "departuresAtFrom": 140,
+   "departuresAtFrom": 139,
    "departures": 435,
-   "nextDeparture": "20261104",
+   "nextDeparture": "20261105",
    "to": 100,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "175": {
    "name": "Stirling Castle, Kelpies & Whisky Day Tour, Edinburgh",
@@ -83,19 +83,19 @@
    "selectedDates": false,
    "cheapestDates": [
     "20261103",
-    "20261104",
     "20261105",
     "20261106",
     "20261108",
     "20261109",
     "20261110",
-    "20261111"
+    "20261111",
+    "20261112"
    ],
-   "departuresAtFrom": 150,
+   "departuresAtFrom": 149,
    "departures": 444,
    "nextDeparture": "20261103",
    "to": 114,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "176": {
    "name": "Loch Ness Day Tour, Edinburgh",
@@ -106,19 +106,19 @@
    "selectedDates": false,
    "cheapestDates": [
     "20261101",
-    "20261103",
     "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
-    "20261109"
+    "20261109",
+    "20261110"
    ],
-   "departuresAtFrom": 154,
-   "departures": 452,
-   "nextDeparture": "20261030",
+   "departuresAtFrom": 153,
+   "departures": 451,
+   "nextDeparture": "20261101",
    "to": 120,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "198": {
    "name": "3-Day Isle of Skye, Edinburgh",
@@ -227,20 +227,20 @@
    "youthFrom": 78,
    "selectedDates": false,
    "cheapestDates": [
-    "20261103",
-    "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261110",
     "20261111",
-    "20261112"
+    "20261112",
+    "20261113",
+    "20261114"
    ],
-   "departuresAtFrom": 123,
-   "departures": 407,
-   "nextDeparture": "20261103",
+   "departuresAtFrom": 121,
+   "departures": 406,
+   "nextDeparture": "20261105",
    "to": 104,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "212": {
    "name": "Outlander Day Tour, Edinburgh",
@@ -321,19 +321,19 @@
    "selectedDates": false,
    "cheapestDates": [
     "20261103",
-    "20261104",
     "20261105",
     "20261106",
     "20261107",
     "20261108",
     "20261109",
-    "20261110"
+    "20261110",
+    "20261111"
    ],
-   "departuresAtFrom": 152,
+   "departuresAtFrom": 151,
    "departures": 449,
    "nextDeparture": "20261103",
    "to": 100,
-   "lastDeparture": "20280202"
+   "lastDeparture": "20280203"
   },
   "463": {
    "name": "7-Day Skye & Hebrides, Edinburgh",
